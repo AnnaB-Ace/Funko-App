@@ -1,0 +1,87 @@
+.container-global {
+  display: flex;
+  margin: 45px 6px;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  @media (max-width: 1200px) {
+    margin: 20px 6px;
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-options {
+    font-family: Inter;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #8c8c8c;
+    @media (max-width: 650px) {
+      margin: 10px 0 10px 0;
+    }
+
+    li {
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      margin-left: 6px;
+    }
+    .container-options__black {
+      color: black;
+      font-weight: 700;
+    }
+  }
+  .order {
+    display: flex;
+    justify-content: space-between;
+    width: 192px;
+    height: 36px;
+    background: #ffffff;
+    border: 2px solid #f0f0f0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 9px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #505050;
+    align-items: center;
+    @media (max-width: 670px) {
+      margin: 10px 0 10px 0;
+      width: 270px;
+    }
+  }
+  .filter {
+    padding: 5px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 650px) {
+      width: 270px;
+      justify-content: space-between;
+      height: 36px;
+      padding: 9px;
+      font-size: 15px;
+      line-height: 18px;
+      color: #505050;
+      border: 2px solid #8c8c8c;
+      box-sizing: border-box;
+      border-radius: 6px;
+    }
+    .filter__name {
+      //   font-family: Neue Machina; buscar
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+    .filter__image {
+      width: 15px;
+      @media (max-width: 650px) {
+        width: 12px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}

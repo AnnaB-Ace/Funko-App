@@ -1,21 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ContainerOptions from "../components/containerOptions/ContainerOptions";
 import "./Listado.scss";
-import Banner from "../assets/image/banner_listado.png";
-import Funkii from "../assets/image/4048.png";
-import Car from "../assets/image/car.png";
+import { getEventsList } from "../api/list";
+import ListProducts from "../components/listProducts/ListProducts";
+import Banner from "../components/banner/Banner";
 
 const Listado = () => {
-  //  const [states, setStates] = useState([]);
-  //const imagenes = require.context("../assets/image", true);
+  const [list, setList] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const getList = async () => {
+    try {
+      setLoading(true);
+      const resp = await getEventsList();
+      console.log(resp.data.eventos);
+      setList(resp.data.eventos);
+    } catch (err) {
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getList();
+  }, []);
+  console.log("Lista:", list);
   return (
     <div className="listado">
-      <div className="listado-container">
-        <img className="image" src={Banner} alt="banner" />
-      </div>
+      <Banner />
       <ContainerOptions />
-      {/* <img src={imagenes("./29164.png")} alt="fotofunkyr" /> */}
-      <div className="listado-products">
+      <ListProducts list={list} />
+    </div>
+  );
+};
+
+export default Listado;
+
+/* <button className="productos__data__button">
+          <img src={Car} alt="car" width="100%" />
+        </button> */
+
+/* <img src={imagenes("./29164.png")} alt="fotofunkyr" /> */
+
+/* <div className="listado-products">
         <img src={Funkii} alt="fotofunkyr" width="100%" />
         <div className="listado-products__data">
           <p className="listado-products__title">Funko</p>
@@ -28,9 +54,4 @@ const Listado = () => {
         <button className="listado-products__button">
           <img src={Car} alt="car" width="100%" />
         </button>
-      </div>
-    </div>
-  );
-};
-
-export default Listado;
+      </div> */

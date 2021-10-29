@@ -1,0 +1,15 @@
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1600px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  background-color: brown;
+  .banner__image {
+    width: 100%;
+    align-items: center;
+  }
+}

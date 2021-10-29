@@ -46,7 +46,7 @@
     color: #505050;
     align-items: center;
     @media (max-width: 700px) {
-      margin: 10px 0 10px 0;
+      margin: 10px 0 30px 0;
       width: 270px;
     }
   }
@@ -69,7 +69,6 @@
       border-radius: 6px;
     }
     .filter__name {
-      //   font-family: Neue Machina; buscar
       font-weight: 800;
       font-size: 16px;
       line-height: 18px;

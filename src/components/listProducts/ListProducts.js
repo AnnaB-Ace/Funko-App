@@ -3,11 +3,10 @@ import "./ListProducts.scss";
 import Car from "../../assets/image/car.png";
 
 const ListProducts = ({ list }) => {
-  const cuotas = list.price / 6;
   return (
     <div className="products__container">
       {list.map((lis, i) => (
-        <div className="products__card">
+        <div className="products__card" key={i}>
           <img
             className="products__card-image"
             src={`${lis.image}`}
@@ -20,11 +19,12 @@ const ListProducts = ({ list }) => {
               <div className="products__description-cuotas">
                 6 cuotas s/interés de
               </div>
-              <div className="products__description-interes">$211,50</div>
+              <div className="products__description-monto">$211,50</div>
               <div className="products__description-interes">
-                <span className="products__description-interes">Final:</span>
-                <span>$</span>
-                <span>{lis.price}</span>
+                <span className="products__description-final">Final:</span>
+                <span className="simbolo">$</span>
+                <span className="precio">{lis.price}</span>
+                <span className="descuento">$1.269</span>
               </div>
             </div>
             <button className="products__card-button my-3">

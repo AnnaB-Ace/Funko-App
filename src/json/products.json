@@ -1,85 +1,32 @@
 [
   {
+    "image": "http://via.placeholder.com/150x150",
     "name": "Funko POP | Game of Thrones - Daenerys 25",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635347591/mqwsdtupsgppf0jlylbd.png",
-    "id": "617aa97ebfd85f3643a8ae63"
+    "price": 1.269
   },
   {
-    "name": "Funko POP | Game of Thrones - Daenerys 62",
-    "price": 2390,
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635347999/i9uhty0ywzefqcsy5esg.png",
-    "id": "617aa9a5bfd85f3643a8ae65",
-    "descuento": 0
+    "image": "http://via.placeholder.com/150x150",
+    "name": "Funko POP | Game of Thrones - Daenerys 25",
+    "price": 2.39
   },
   {
-    "name": "Funko POP | Game of Thrones - Daenerys 53",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635348308/dq5ayxwyzywiujbvd3l8.png",
-    "id": "617aaa1abfd85f3643a8ae67",
-    "descuento": 0
+    "image": "http://via.placeholder.com/150x150",
+    "name": "Funko POP | Game of Thrones - Daenerys 25",
+    "price": 0
   },
   {
-    "name": "Funko POP | Game of Thrones - Daenerys 50",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635348370/oalrbnnvdtjfhpxbvdda.png",
-    "id": "617aaa5ebfd85f3643a8ae69",
-    "descuento": 10
+    "image": "http://via.placeholder.com/150x150",
+    "name": "Funko POP | Game of Thrones - Daenerys 25",
+    "price": 400.0
   },
   {
-    "name": "Funko POP | Game of Thrones - Daenerys 49",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635348491/stb2qnsem5fs47nhxzsj.png",
-    "id": "617aaa91bfd85f3643a8ae6b",
-    "descuento": 0
+    "image": "http://via.placeholder.com/150x150",
+    "name": "Funko POP | Game of Thrones - Daenerys 25",
+    "price": 500.0
   },
   {
-    "name": "Funko POP | Game of Thrones - Daenerys 44",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635348583/cqadepumwv51dmzyurjh.png",
-    "id": "617aaaaabfd85f3643a8ae6d",
-    "descuento": 0
-  },
-  {
-    "name": "Funko POP | Game of Thrones - Daenerys 13",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635346795/nakky43pqjjha6ecd8pa.png",
-    "id": "617aaad5bfd85f3643a8ae6f",
-    "descuento": 10
-  },
-  {
-    "name": "Funko POP | Game of Thrones - Daenerys 19",
-    "price": {
-      "valor": 2390,
-      "stock": 0,
-      "decuento": 10
-    },
-    "image": "https://res.cloudinary.com/dzppj9arg/image/upload/v1635349182/aj9vgfqsrtm3se1hqyzt.png",
-    "id": "617aab10bfd85f3643a8ae71",
-    "descuento": 10
+    "image": "http://via.placeholder.com/150x150",
+    "name": "Funko POP | Game of Thrones - Daenerys 25",
+    "price": 600.0
   }
 ]

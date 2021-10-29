@@ -8,7 +8,6 @@
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 20px;
-  background-color: aqua;
 
   @media (max-width: 700px) {
     max-width: 310px;
@@ -53,7 +52,8 @@
         line-height: 18px;
         letter-spacing: 0.08em;
       }
-      .products__description-name {
+      .products__description-name,
+      .products__description-final {
         font-family: $fuente-inter;
         height: 18px;
         font-size: 15px;
@@ -61,6 +61,24 @@
         letter-spacing: 0.05em;
         color: #000000;
         padding: 4px 0 4px 0;
+        @media (max-width: 700px) {
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
+        @media (max-width: 300px) {
+          font-size: 12px !important;
+        }
+      }
+
+      .products__description-cuotas {
+        font-family: $fuente-inter;
+        height: 18px;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        color: #505050;
+        margin-top: 12px;
+        padding: 4px 0 15px 0;
         @media (max-width: 700px) {
           font-size: 13px;
           margin-bottom: 20px;
@@ -81,10 +99,10 @@
           font-size: 13px;
         }
       }
-      .products__description-interes {
+      .products__description-monto {
         color: #000000;
-        margin-top: 3px;
-        font-weight: bold;
+        margin-top: 4px;
+        font-weight: 700;
         font-size: 22px;
         height: 24px;
         letter-spacing: 0.05em;
@@ -93,6 +111,26 @@
           margin-top: 10px;
         }
       }
+      .products__description-interes {
+        margin-top: 7px;
+        .precio {
+          text-decoration-line: line-through;
+          color: #8c8c8c;
+          margin-right: 4px;
+          font-size: 15px;
+        }
+        .simbolo {
+          text-decoration-line: line-through;
+          color: #8c8c8c;
+        }
+        .descuento {
+          text-decoration-line: line-through;
+          font-size: 16px;
+          color: #ec2227;
+          font-weight: bold;
+        }
+      }
+
       .products__card-button {
         width: 60px;
         height: 48px;

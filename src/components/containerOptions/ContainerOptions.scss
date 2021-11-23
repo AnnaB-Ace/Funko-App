@@ -1,8 +1,7 @@
+@import "../../styles/flex.scss";
 .container-global {
-  display: flex;
+  @include flexProps(flex, row, center, space-between, wrap);
   margin: 45px 6px;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   @media (max-width: 1200px) {
     margin: 20px 6px;
@@ -32,8 +31,7 @@
     }
   }
   .order {
-    display: flex;
-    justify-content: space-between;
+    @include flexProps(flex, row, center, space-between, nowrap);
     width: 192px;
     height: 36px;
     background: #ffffff;
@@ -44,7 +42,6 @@
     font-size: 15px;
     line-height: 18px;
     color: #505050;
-    align-items: center;
     @media (max-width: 700px) {
       margin: 10px 0 30px 0;
       width: 270px;

@@ -1,0 +1,29 @@
+@mixin flexProps(
+  $display,
+  $flexdirection,
+  $alingItem,
+  $justifyContent,
+  $flexwrap
+) {
+  display: $display;
+  flex-direction: $flexdirection;
+  align-items: $alingItem;
+  justify-content: $justifyContent;
+  flex-wrap: $flexwrap;
+}
+
+@mixin descriptionProps(
+  $font-family,
+  $height,
+  $color,
+  $font-weight,
+  $font-size,
+  $letter-spacing
+) {
+  font-family: $font-family;
+  height: $height;
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+}

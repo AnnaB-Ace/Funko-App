@@ -73,14 +73,25 @@
           font-size: 12px !important;
         }
       }
+      //       (
+      //   $font-family,
+      //   $height,
+      //   $color,
+      //   $font-weight,
+      //   $font-size,
+      //   $letter-spacing
+      // )
 
       .products__description-cuotas {
-        font-family: $fuente-inter;
-        height: 18px;
-        font-size: 15px;
+        @include descriptionProps(
+          $fuente-inter,
+          18px,
+          #505050,
+          none,
+          15px,
+          0.05em
+        );
         line-height: 18px;
-        letter-spacing: 0.05em;
-        color: #505050;
         margin-top: 12px;
         padding: 4px 0 15px 0;
         @media (max-width: 700px) {
@@ -149,4 +160,7 @@
       }
     }
   }
+}
+.prueba {
+  color: blue;
 }
